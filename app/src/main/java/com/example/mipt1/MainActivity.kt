@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val paspauskButton = findViewById<Button>(R.id.paspauskButton)
         val spalvaButton = findViewById<Button>(R.id.spalvaButton)
         val patarle = findViewById<TextView>(R.id.patarle)
+        val fonasButton = findViewById<Button>(R.id.fonasButton)
 
         paspauskButton.setOnClickListener {
             patarle.text = getString(R.string.patarle_kregzde)
@@ -32,5 +33,9 @@ class MainActivity : AppCompatActivity() {
             //naudojau pradzioje .setTextColor taciau anrdoid studio pasiule pakeisti i .toColorInt
             patarle.setTextColor("#B47ECF".toColorInt())
         }
+        fonasButton.setOnClickListener {
+        patarle.setBackgroundColor("#ADFFF4".toColorInt())
+        }
+
     }
 }
