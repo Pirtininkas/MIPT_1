@@ -39,5 +39,3 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
-
-//Comment for revert
