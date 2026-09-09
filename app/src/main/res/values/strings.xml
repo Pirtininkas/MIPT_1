@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MIPT_1 Praktikos darbas</string>
+    <string name="patarle_kregzde">Viena kregždė - dar ne pavasaris</string>
+    <string name="paspausk_mgtk">Paspausk 🤫</string>
 </resources>

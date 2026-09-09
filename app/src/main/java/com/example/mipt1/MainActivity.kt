@@ -1,6 +1,8 @@
 package com.example.mipt1
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,15 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+
+        val paspauskButton = findViewById<Button>(R.id.paspauskButton)
+        val patarle = findViewById<TextView>(R.id.patarle)
+
+        paspauskButton.setOnClickListener {
+            patarle.text = getString(R.string.patarle_kregzde)
+
         }
     }
 }
